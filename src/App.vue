@@ -51,10 +51,9 @@ export default {
         board[i][j] = new Square()
       }
     }
-    // placing numbers
+    // assigns numbers to null element based on number of bombs in it's vacinity
     for (let i = 0; i < this.height; i++) {
       for (let j = 0; j < this.width; j++) {
-        // if Mine is not present, do nothing
         if (board[i][j].getContents() === 'M') {
           adjustments.forEach(adjI => {
             adjustments.forEach(adjJ => {
@@ -76,6 +75,8 @@ export default {
     this.board = board
   },
   methods: {
+    // reveals the elements selected, if null calls chainReveal to reveal all null elements in vacinity
+    // if bomb, reveals bomb and presents 'You Lost' string
     reveal (i, j) {
       const board = this.board
       board[i][j].reveal()
@@ -90,6 +91,7 @@ export default {
       }
       this.board = board
     },
+    // right click presents flag
     flag (i, j) {
       const board = this.board
       board[i][j].flag()
