@@ -1,0 +1,41 @@
+0: {
+    name: "Ducky one RGB",
+    description: "Ducky mechanical keyboard with RGB lights",
+    image: "",
+    price: 117.57
+}
+
+1: {
+    name: "ducky 60% keyboard",
+    description: "ducky 60% of full size keyboard",
+    image: "",
+    price: 99.95
+}
+
+2: {
+    name: "ducky TKL",
+    description: "Ducky's Mechanical Keyboard, tenkey less",
+    image: "",
+    price: 129.99
+}
+
+3: {
+    name: "M2 .50",
+    description: "Maw-Duece .50 cal machine gun",
+    image: "",
+    price: 20000.00
+}
+
+4: {
+    name: "M249 SAW",
+    description: "Squad Automatic Weapon, 5.56x45",
+    image: "",
+    price: 16500
+}
+
+5: {
+    name: "M240-B",
+    description: "M240, 7.62x51 automatic machine gun",
+    image: "",
+    price: 18950
+}
